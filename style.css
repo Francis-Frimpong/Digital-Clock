@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("photo-assert/photo-assert1.jpg");
+  background-position: center;
+}
+
+.banner {
+  text-align: center;
+  margin-top: 4em;
+  color: rgb(22, 22, 21);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.container > div {
+  /* From https://css.glass */
+  background: rgba(175, 110, 54, 0.24);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(175, 110, 54, 0.3);
+  font-size: 1.5rem;
+  padding: 0.7em;
+  color: rgb(22, 22, 21);
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+}
