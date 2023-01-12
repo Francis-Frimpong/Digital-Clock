@@ -16,8 +16,22 @@ function clock() {
   hours.textContent = hrs;
   minutes.textContent = min;
   seconds.textContent = sec;
+  am_pm.textContent = "AM";
 
   if (hrs === 12) {
     am_pm.textContent = "PM";
   }
+  if (hrs > 12) {
+    hrs -= 12;
+    am_pm.textContent = "PM";
+  }
+
+  if (hrs === 0) {
+    hours.textContent = hrs = 12;
+    am_pm.textContent = "AM";
+  }
+
+  hrs < 10 ? (hours.textContent = "0" + hrs) : hrs;
+  min < 10 ? (minutes.textContent = "0" + min) : min;
+  sec < 10 ? (seconds.textContent = "0" + sec) : sec;
 }
